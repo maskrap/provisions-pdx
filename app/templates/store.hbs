@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-sm-6 col-sm-offset-1">
     <h1>Store</h1>
-    {{#each model as |item|}}
-      {{item-tile item=item}}<br>
-    {{/each}}
+      {{#each model as |item|}}
+        {{#link-to 'item' item.id}}{{item-tile item=item}}{{/link-to}}<br>
+      {{/each}}
   </div>
   <div class="col-sm-4">
     {{display-cart}}

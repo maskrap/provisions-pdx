@@ -1,0 +1,6 @@
+.item-tile {
+  border: solid 4px black;
+  padding: 25px;
+  margin: 7px;
+  border-radius: 10px;
+}
