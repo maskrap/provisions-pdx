@@ -7,6 +7,7 @@ export default Ember.Component.extend({
     showUpdateForm() {
       this.set('showUpdateForm', true);
     },
+
     update(item) {
       item.save();
       this.set('showUpdateForm', false);
