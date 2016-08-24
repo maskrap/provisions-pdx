@@ -1,6 +1,7 @@
 <div class="container">
-{{#each model as |item|}}
-  {{admin-tile item=item update="update" destroyItem="destroyItem"}}
-{{/each}}
-{{new-item save="save"}}
+  {{#each model as |item|}}
+    {{admin-tile item=item update="update" destroyItem="destroyItem"}}
+  {{/each}}
+
+  {{new-item save="save"}}
 </div>

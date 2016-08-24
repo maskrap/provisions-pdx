@@ -1,4 +1,8 @@
-{{item.image}}
-{{item.name}}
-{{item.category}}
-{{item.price}}
+<div class="container">
+  <img src="{{item.image}}">
+  <h3>{{item.name}}</h3>
+  <h4>{{item.cost}}</h4>
+  <p>{{item.description}}</p>
+  {{update-item item=item update="update"}}
+  <button {{action 'delete' item}}>Delete</button>
+</div>
