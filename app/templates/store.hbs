@@ -2,7 +2,7 @@
   <div class="col-sm-6 col-sm-offset-1">
     <h1>Store</h1>
       {{#each model as |item|}}
-        {{#link-to 'item' item.id}}{{item-tile item=item}}{{/link-to}}<br>
+        {{item-tile item=item}}<br>
       {{/each}}
   </div>
   <div class="col-sm-4">

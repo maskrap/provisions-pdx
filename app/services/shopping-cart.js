@@ -7,4 +7,20 @@ export default Ember.Service.extend({
     this.get('items').pushObject(item);
   },
 
+  remove(item) {
+    this.get('items').removeObject(item);
+  },
+
+  empty() {
+    this.get('items').clear();
+  },
+
+  total: Ember.computed('items.length', function(){
+    var sum = 0;
+    this.get('items').forEach(function(item){
+      sum += parseFloat(item.get('cost'));
+    });
+    return sum.toFixed(2);
+  })
+
 });

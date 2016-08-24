@@ -1,6 +1,28 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .item-tile {
   border: solid 4px black;
   padding: 25px;
   margin: 7px;
   border-radius: 10px;
+}
+
+.img-wrap {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  color: #00A79D;
 }

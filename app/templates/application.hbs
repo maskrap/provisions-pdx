@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="wrapper">
+  <div class="main-container">
+    <div class="img-wrap">
+      {{#link-to 'index'}}<img class="img-logo" src="/css/img/main-logo.png">{{/link-to}}
+    </div>
+  </div>
+  <div class="main-body">
+    {{outlet}}
+  </div>
+</div>
