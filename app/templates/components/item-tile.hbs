@@ -1,6 +1,6 @@
 <div class="item-tile">
-  {{#link-to 'item' item.id}}<img src="{{item.image}}">{{/link-to}}
+  {{#link-to 'item' item.id}}<img class="img-item" src="{{item.image}}">{{/link-to}}
   {{#link-to 'item' item.id}}<h3>{{item.name}}</h3>{{/link-to}}
-  <h4>{{item.cost}}</h4>
+  <h4>${{item.cost}}</h4>
   <button {{action 'addToCart' item}}>Add to Cart</button>
 </div>

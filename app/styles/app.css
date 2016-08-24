@@ -26,3 +26,15 @@
 h1 {
   color: #00A79D;
 }
+
+body {
+  background-color: #DFDEDC;
+}
+
+.img-item {
+  height: 250px;
+}
+
+.delete-button {
+  margin-bottom: 25px;
+}
