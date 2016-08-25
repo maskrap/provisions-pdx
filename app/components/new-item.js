@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         description: this.get('description')? this.get('description') : "",
         category: this.get('category')? this.get('category') : "",
         image: this.get('image')? this.get('image') : "",
-        cost: parseInt(this.get('cost')? this.get('cost') : ""),
+        cost: parseFloat(this.get('cost')? this.get('cost') : "").toFixed(2),
       };
       this.set('addNewItem', false);
       this.sendAction('save', params);

@@ -1,0 +1,25 @@
+  <h1> Your Shopping Cart</h1>
+
+<div class="row">
+  <div class="checkout">
+    <table class="col-sm-10">
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Category</th>
+        <th>Cost</th>
+      </tr>
+      {{#each shoppingCart.items as |item|}}
+        <tr class="checkoutitems">
+          <td>{{item.name}}</td>
+          <td>1</td>
+          <td>{{item.category}}</td>
+          <td>{{item.cost}}</td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+</div>
+<div class="row">
+  <h3>TOTAL: ${{shoppingCart.total}}</h3>
+</div>

@@ -28,7 +28,16 @@ h1 {
 }
 
 body {
-  background-color: #DFDEDC;
+  background-color: #ededed;
+  width:100%;
+  padding:1em 1.5em;
+  text-decoration:none;
+  color: #979797;
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .img-item {
@@ -46,4 +55,78 @@ body {
 
 .glyphicon-star {
   color: #00A79D;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.navigation-container {
+	display: flex;
+  max-width: 1200px;
+}
+
+.navigation {
+	position: absolute;
+  margin-top: 2%;
+	width:100%;
+
+}
+
+.navigation-item {
+	width:100%;
+	/*border-bottom:1px solid #eee;*/
+}
+
+.navigation-item a {
+  display:
+	width:100%;
+	padding:1em 1.5em;
+	text-decoration:none;
+  color: #979797;
+  background-color: transparent;
+  font-size: 1.3em;
+  padding: 0 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navitems {
+  display: flex;
+  align-items: center;
+}
+
+.main-body {
+  margin-top: 12%;
+}
+
+.newitem {
+  border: solid 2px black;
+  padding-bottom: 1.5%;
+  padding-left: 2%;
+  margin-bottom: 2%;
+}
+
+.new-item-btn {
+  color: white;
+  font-weight: bold;
+  background-color: #00A79D
+}
+
+.checkout {
+  color: #979797;
+  font-size: 1.5em;
+}
+
+.checkoutitems {
+  color: black;
+  font-size: 1em;
+}
+
+td, th {
+  padding-right: 10px;
 }
