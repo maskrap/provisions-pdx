@@ -1,15 +1,19 @@
-<div class="item-tile">
-  <img src="{{model.image}}">
-  <h3>{{model.name}}</h3>
-  <h4>${{model.cost}}</h4>
-  <p>{{model.description}}</p>
-  <button {{action 'addToCart' item}}>Add to Cart</button>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1">
+    {{item-detail item=model}}
+  </div>
+  <div class="col-sm-4">
+    {{display-cart}}
+  </div>
 </div>
-
-<h3>Posted Comments:</h3>
-<ul>
-  {{#each model.comments as |comment|}}
-    <li><h4>{{comment.name}} says</h4> <p>{{comment.comment}}</p></li>
-  {{/each}}
-</ul>
-{{new-comment saveComment="saveComment" item=model}}
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-1">
+    <h3>Posted Comments:</h3>
+    <ul>
+      {{#each model.comments as |comment|}}
+        <li><h4>{{comment.name}} says</h4> <p>{{comment.comment}}</p></li>
+      {{/each}}
+    </ul>
+    {{new-comment saveComment="saveComment" item=model}}
+  </div>
+</div>

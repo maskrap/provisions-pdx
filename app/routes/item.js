@@ -6,9 +6,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    addToCart(item) {
-      this.get('shoppingCart').add(item);
-    },
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params);
       var item = params.item;
@@ -17,6 +14,6 @@ export default Ember.Route.extend({
         return item.save();
     });
       this.transitionTo('item', params.item);
-  },
+    },
   }
 });
