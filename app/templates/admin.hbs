@@ -1,9 +1,15 @@
+<h1> Administrator Tasks</h1><br>
 <div class="container">
-  {{new-item save="save"}}
-</div>
-<div class="container">
-  {{#each model as |item|}}
-    {{admin-tile item=item update="update" destroyItem="destroyItem"}}<br>
-  {{/each}}
-
+  <div class="row">
+    <div class="col-sm-8">
+      {{new-item save="save"}}<br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      {{#each model as |item|}}
+      {{admin-tile item=item update="update" destroyItem="destroyItem"}}<br>
+      {{/each}}
+    </div>
+  </div>
 </div>
