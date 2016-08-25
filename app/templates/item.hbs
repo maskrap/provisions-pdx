@@ -11,7 +11,7 @@
     <h3>Posted Comments:</h3>
     <ul>
       {{#each model.comments as |comment|}}
-        <li><h4>{{comment.name}} says</h4> <p>{{comment.comment}}</p></li>
+        <li>{{rating-stars comment.rating}}<h4>{{comment.name}} says <span class="unbold">{{comment.comment}}</span></h4></li>
       {{/each}}
     </ul>
     {{new-comment saveComment="saveComment" item=model}}

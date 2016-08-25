@@ -38,3 +38,12 @@ body {
 .delete-button {
   margin-bottom: 25px;
 }
+
+.unbold {
+  font-weight: normal;
+  font-size: .75em;
+}
+
+.glyphicon-star {
+  color: #00A79D;
+}
